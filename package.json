@@ -1,0 +1,17 @@
+{
+  "name": "story-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ستوري ستوديو - تحويل القصص إلى فيديوهات أنيميشن بالذكاء الاصطناعي",
+  "scripts": {
+    "serve": "npx http-server www -p 8080 -c-1",
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.1",
+    "@capacitor/share": "^6.0.2"
+  }
+}

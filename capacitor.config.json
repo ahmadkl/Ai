@@ -1,0 +1,8 @@
+{
+  "appId": "com.storystudio.app",
+  "appName": "ستوري ستوديو",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161f">
+<link rel="manifest" href="manifest.json">
+<title>ستوري ستوديو</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">▶</span><b>ستوري ستوديو</b></div>
+  <div id="crumb" class="crumb"></div>
+</header>
+
+<main id="view"></main>
+
+<nav class="tabs" id="tabs">
+  <button data-go="home"><i>🎞️</i><span>مشاريعي</span></button>
+  <button data-go="create"><i>✨</i><span>قصة جديدة</span></button>
+  <button data-go="studio"><i>🎬</i><span>الاستوديو</span></button>
+  <button data-go="settings"><i>⚙️</i><span>الإعدادات</span></button>
+</nav>
+
+<div id="busy" class="overlay" hidden>
+  <div class="box">
+    <div id="busyTitle" class="busy-title"></div>
+    <div class="bar"><div id="busyBar"></div></div>
+    <div id="busyNote" class="muted"></div>
+    <button id="busyCancel" class="btn ghost">إلغاء</button>
+  </div>
+</div>
+
+<div id="player" class="overlay" hidden>
+  <div class="box wide">
+    <canvas id="stage"></canvas>
+    <div class="ctrl">
+      <button id="pPlay" class="btn">تشغيل</button>
+      <input id="pSeek" type="range" min="0" max="1000" value="0">
+      <span id="pTime" class="muted">0:00</span>
+    </div>
+    <div class="row">
+      <button id="pExport" class="btn primary">تصدير الفيديو</button>
+      <button id="pClose" class="btn ghost">إغلاق</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
